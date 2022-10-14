@@ -1,4 +1,5 @@
 import 'package:app/ui/main_page.dart';
+import 'package:app/ui/payment_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: const MainPage());
+        debugShowCheckedModeBanner: false,
+       home: const PaymentPage());
   }
 }

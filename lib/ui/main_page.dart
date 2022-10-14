@@ -108,13 +108,15 @@ class _HomeScreen extends State<MainPage> {
               Padding(
                 padding: const EdgeInsets.only(left: 34, top: 64),
                 child: DecoratedBox(
-                  decoration: ShapeDecoration(
-                      gradient: LinearGradient(colors: [
-                        Color(0xFFDA4ECB),
-                        Color(0xFF2C3AE8),
-                        Color(0xFF467FC9),
-                      ]),
-                      shape: StadiumBorder()),
+                decoration: BoxDecoration(
+                      
+                        gradient: LinearGradient(colors: [
+                          Color(0xFFDA4ECB),
+                          Color(0xFF2C3AE8),
+                          Color(0xFF467FC9),
+                        ]),
+                        borderRadius: BorderRadius.all(Radius.circular(29))
+                        ),
                   child: ElevatedButton(
                     onPressed: () {},
                     child: Text(
@@ -589,10 +591,3 @@ class _HomeScreen extends State<MainPage> {
   }
 }
 
-//  BottomNavigationBar(
-//   items: [
-
-//     BottomNavigationBarItem(icon: Icon(Icons.place),),
-//     BottomNavigationBarItem(icon: Icon(Icons.menu),),
-//     BottomNavigationBarItem(icon: Icon(Icons.flutter_dash),),],
-// ),
